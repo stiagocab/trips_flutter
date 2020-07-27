@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:trips_flutter/pages/home_page.dart';
+// import 'package:trips_flutter/app.dart';
+import 'package:trips_flutter/app_cupertino.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       statusBarBrightness: Brightness.light,
     ));
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Trips',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: TripsAppCuptertino(),
     );
   }
 }

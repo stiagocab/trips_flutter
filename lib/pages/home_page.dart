@@ -15,19 +15,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(children: <Widget>[
-        ListView(
-          children: <Widget>[
-            DescriptionPlace(
-              stars: 4.0,
-              namePlace: "Duwilli Ella",
-              descriptionPlace: dummyText,
-            ),
-            ReviewList()
-          ],
-        ),
-        HeaderAppBar()
-      ]),
+      body: Stack(
+        children: <Widget>[
+          ListView(
+            children: <Widget>[
+              DescriptionPlace(
+                stars: 4.0,
+                namePlace: "Duwilli Ella",
+                descriptionPlace: dummyText,
+              ),
+              ReviewList()
+            ],
+          ),
+          HeaderAppBar()
+        ],
+      ),
     );
   }
 }

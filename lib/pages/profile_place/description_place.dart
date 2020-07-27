@@ -15,7 +15,7 @@ class DescriptionPlace extends StatelessWidget {
     final titleStars = Row(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 10.0),
+          margin: EdgeInsets.only(top: 340.0, left: 20.0, right: 10.0),
           child: Text(
             namePlace,
             style: TextStyle(
@@ -28,7 +28,7 @@ class DescriptionPlace extends StatelessWidget {
         ),
         RankStars(
           rank: stars,
-          marginTop: 326.0,
+          marginTop: 345.0,
           size: 20.0,
         )
       ],

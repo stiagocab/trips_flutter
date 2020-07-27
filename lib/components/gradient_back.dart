@@ -3,12 +3,13 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class GradientBack extends StatelessWidget {
   String title;
-  GradientBack({this.title = "Title"});
+  double height;
+  GradientBack({this.title = "Title", this.height = 250.0});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250.0,
+      height: height,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [Color(0xFF4268D3), Color(0xFF584CD1)],
@@ -27,7 +28,7 @@ class GradientBack extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      alignment: Alignment(-0.9, -0.6),
+      alignment: Alignment(-0.9, -0.75),
     );
   }
 }
